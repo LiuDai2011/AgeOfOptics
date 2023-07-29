@@ -1,5 +1,7 @@
 package AOO;
 
+import AOO.content.AOOBlocks;
+import AOO.content.AOOItems;
 import arc.*;
 import arc.scene.ui.layout.Table;
 import arc.util.*;
@@ -28,6 +30,9 @@ public class ModMain extends Mod{
     @Override
     public void loadContent(){
         Log.info("Loading some example content.");
+
+        AOOItems.load();
+        AOOBlocks.load();
     }
 
 }
